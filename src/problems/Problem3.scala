@@ -46,7 +46,7 @@ class Problem3 {
       }
     }
   } catch {
-    case _ => {
+    case _:Throwable => {
       if (currentNumber > 1) primeFactors.add(currentNumber)
       println(primeFactors.max)
     }
